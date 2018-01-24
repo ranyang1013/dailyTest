@@ -15,9 +15,7 @@ class ViewController: UIViewController ,BMKMapViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
-        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -34,7 +32,6 @@ class ViewController: UIViewController ,BMKMapViewDelegate{
         _mapView?.delegate = nil // 不用时，置nil
     }
     
-    
     func configUI() {
         //使用地图
         _mapView = BMKMapView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
@@ -42,10 +39,5 @@ class ViewController: UIViewController ,BMKMapViewDelegate{
         _mapView?.showsUserLocation = true
         _mapView?.userTrackingMode = BMKUserTrackingModeNone
     }
-    
-   
-    
-
-
 }
 
